@@ -4,8 +4,12 @@
   {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {% endif %}
 
-<img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
-<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
+<img src="{{ user.avatar_url }}" class="circle mb-3 d-flex mx-auto" style="max-width: 150px;">
+<h3 class="{% if site.style == 'dark' %}text-white{% endif %} lh-condensed text-center">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h2>
+<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed text-center">溝口 聡基</h1>
+<p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+  Android エンジニア / <a href="https://github.com/mizo0203/TimelineTalker" {% if site.style == 'dark' %}class="text-white"{% endif %}>タイムライン読み上げアプリ</a>公開中 / 大阪工業大学 情報科学部 13 年度卒 / ACM-ICPC 2011 年国内予選通過 (Discrete3rd grade)
+</p>
 <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
   {{ user.bio }}
 </p>
